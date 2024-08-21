@@ -13,5 +13,18 @@ public class Main {
         employee.employeeSummary();
         System.out.println();
 
+        // Manager object
+        Manager manager = new Manager("Meghan", "Califa", 11104, "HR");
+        manager.employeeSummary();
+        System.out.println();
+
+        manager.setSalary(77000);
+        manager.employeeSummary();
+        System.out.println();
+
+        manager.setDepartment("Prod-Ops");
+        manager.employeeSummary();
+        System.out.println();
+
     }
 }
