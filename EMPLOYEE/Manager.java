@@ -13,4 +13,15 @@ public class Manager extends Employee {
         this.department = department;
     }
 
+    // Getter for the department field
+    public String getDepartment() {
+        return department;
+    }
+
+    // Overridden employeeSummary method
+    @Override
+    public void employeeSummary() {
+        super.employeeSummary(); // Call the superclass's employeeSummary method
+        System.out.println("Department: " + department);
+    }
 }
